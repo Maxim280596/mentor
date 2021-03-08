@@ -1,0 +1,10 @@
+.bl-scroll {    width: 100%;   
+     max-height: 250px; 
+     display: inline-block;    
+     overflow-x: hidden;     
+     margin: 0 -3px;    
+     padding-top: 1px;
+    }
+
+
+    #body{}::-webkit-scrollbar{width: 5px;height: 5px;}::-webkit-scrollbar-track-piece{background-color: #ffffff;}::-webkit-scrollbar-thumb:vertical{height: 5px;background-color: #607d8b ;}::-webkit-scrollbar-thumb:horizontal{width: 5px;background-color:#607d8b ;}

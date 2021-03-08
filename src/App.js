@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Form from './components/Form/Form';
 import styled from 'styled-components';
@@ -7,10 +7,8 @@ import { Footer } from './components/Layout/Footer';
 
 import { Mentor } from './components/Mentor';
 const StyledContainer = styled.main`
-    .content {
-        min-height: calc(100vh - 70px - 64px);
-        padding: 1.5rem 0;
-    }
+    min-height: calc(100vh - 70px - 64px);
+    padding: 1.5rem 0;
 `;
 
 const App = () => {

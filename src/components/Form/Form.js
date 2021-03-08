@@ -1,4 +1,4 @@
-import React, { useState, ComponentChild } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 import Input from '../Input/Input';
