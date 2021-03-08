@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Form from './components/Form/Form';
 import styled from 'styled-components';
+import { Header } from './components/Layout/Header';
+import { Footer } from './components/Layout/Footer';
 
-
-const AppBlock = styled.div`
-    text-align: center;
-    margin : 0 auto;
-    
-   
-   
-`
-
-
+import { Mentor } from './components/Mentor';
+const StyledContainer = styled.main`
+    .content {
+        min-height: calc(100vh - 70px - 64px);
+        padding: 1.5rem 0;
+    }
+`;
 
 const App = () => {
-  return (
-    <AppBlock>
-     <Form/>
-    </AppBlock>
-  );
-}
+    return (
+        <>
+            <Router>
+                <Header />
+                <StyledContainer className='container'>
+                    <Switch>
+                        <Route exact path='/' component={Form} />
+
+                        <Route exact path='/mentor' component={Mentor} />
+                    </Switch>
+                </StyledContainer>
+                <Footer />
+            </Router>
+        </>
+    );
+};
 
 export default App;
